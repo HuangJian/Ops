@@ -2,7 +2,8 @@
 
 ## list all packages installed intentionally
 ```bash
-brew leaves --installed-on-request | xargs -n1 brew desc
+brew leaves --installed-on-request | xargs -n1 brew desc --eval-all
+brew ls --casks | xargs brew desc --eval-all
 ```
 
 ## backup & restore
